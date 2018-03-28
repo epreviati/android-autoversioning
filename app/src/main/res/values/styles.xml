@@ -8,6 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin_small</item>
+        <item name="android:background">@color/separator</item>
+    </style>
+
     <style name="Label" parent="@android:style/TextAppearance">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
