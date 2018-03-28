@@ -1,3 +1,13 @@
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Eclipse project files
+.classpath
+.project
+
 # Built application files
 *.apk
 *.ap_
@@ -53,3 +63,6 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+
+# KeyStore
+.keystore
