@@ -2,6 +2,7 @@ package com.gmail.previati.edgardo.androidautoversioning
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,5 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         text_version_code.text = BuildConfig.VERSION_CODE.toString()
         text_version_name.text = BuildConfig.VERSION_NAME
+
+        button_show_text.setOnClickListener { Toast.makeText(applicationContext, "Click Happened!!", Toast.LENGTH_LONG).show() }
     }
 }
