@@ -1,0 +1,42 @@
+ext.versions = [
+        minSdk             : 21,
+        targetSdk          : 27,
+        compileSdk         : 27,
+
+        // Android
+        gradle             : '3.1.0',
+        supportLibrary     : '27.1.0',
+        supportConstraint  : '1.0.2',
+
+        // Kotlin
+        kotlin             : '1.2.31',
+
+        // Test
+        jUnit              : '4.12',
+        espressoCore       : '3.0.1',
+        runner             : '1.0.1',
+
+        // For automatic version
+        grGit              : '2.1.1'
+]
+
+ext.libraries = [
+        // Android
+        gradle              : "com.android.tools.build:gradle:$versions.gradle",
+        supportAppCompat    : "com.android.support:appcompat-v7:$versions.supportLibrary",
+        supportDesign       : "com.android.support:design:$versions.supportLibrary",
+        supportConstraint   : "com.android.support.constraint:constraint-layout:$versions.supportConstraint",
+
+        // Kotlin
+        kotlin              : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin",
+        kotlinGradlePlugin  : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+        kotlinCoroutines    : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.kotlinCoroutines",
+
+        // Test
+        jUnit               : "junit:junit:$versions.jUnit",
+        espressoCore        : "com.android.support.test.espresso:espresso-core:$versions.espressoCore",
+        runner              : "com.android.support.test:runner:$versions.runner",
+
+        // For automatic version
+        grGit               : "org.ajoberstar:grgit:$versions.grGit"
+]
