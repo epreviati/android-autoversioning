@@ -30,7 +30,6 @@
     <View
         android:id="@+id/separator_app_name"
         style="@style/Separator"
-        android:text="@string/main_label_version_code"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_label_app_name" />
 
@@ -50,7 +49,6 @@
     <View
         android:id="@+id/separator_version_code"
         style="@style/Separator"
-        android:text="@string/main_label_version_code"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_label_version_code" />
 
@@ -70,20 +68,50 @@
     <View
         android:id="@+id/separator_version_name"
         style="@style/Separator"
-        android:text="@string/main_label_version_code"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_label_version_name" />
 
+    <TextView
+        android:id="@+id/text_label_build_type"
+        style="@style/Label"
+        android:text="@string/main_label_build_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator_version_name" />
+
+    <TextView
+        android:id="@+id/text_build_type"
+        style="@style/Label"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/separator_version_name" />
+
+    <View
+        android:id="@+id/separator_build_type"
+        style="@style/Separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_label_build_type" />
+
     <Button
-        android:id="@+id/button_show_text"
+        android:id="@+id/button_show_flavor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/main_button_action_show_toast"
+        android:layout_marginTop="@dimen/activity_vertical_margin_small"
+        android:text="@string/main_button_action_show_flavor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/separator_version_name" />
+        app:layout_constraintTop_toBottomOf="@+id/separator_build_type" />
+
+    <Button
+        android:id="@+id/button_show_application_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin_small"
+        android:text="@string/main_button_action_show_application_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_show_flavor" />
 
 </android.support.constraint.ConstraintLayout>

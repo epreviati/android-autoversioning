@@ -3,5 +3,7 @@
     <string name="main_label_app_name">Application Name</string>
     <string name="main_label_version_code">Version Code</string>
     <string name="main_label_version_name">Version Name</string>
-    <string name="main_button_action_show_toast">Show Toast</string>
+    <string name="main_label_build_type">Build Type</string>
+    <string name="main_button_action_show_flavor">Show Flavor</string>
+    <string name="main_button_action_show_application_id">Show Application ID</string>
 </resources>
