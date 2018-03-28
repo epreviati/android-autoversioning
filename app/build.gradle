@@ -33,7 +33,7 @@ android {
 
     productFlavors {
         dev {
-            versionCode = gitVersionCodeTime
+            versionCode = gitVersionCode
             versionName = gitVersionName
         }
 
